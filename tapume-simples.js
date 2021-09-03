@@ -6,6 +6,7 @@ function ativaTapume(){
 		console.log('funciona');
 	} else {
 		if(window.location.href != newUrl){
+			document.querySelector('body').style.display = "none";
 			window.location.href = newUrl;
 			console.log(window.location.href,newUrl);
 		}
