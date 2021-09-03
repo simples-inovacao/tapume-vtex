@@ -3,10 +3,10 @@ function ativaTapume(){
 	console.log(url[1]);
 	let newUrl = "https://"+window.location.hostname+"/manutencao";
 	if(url[1] == "myvtex"){
-		console.log('funciona');
+		document.querySelector('body').classList.remove('hide-tapume')
 	} else {
 		if(window.location.href != newUrl){
-			document.querySelector('body').style.display = "none";
+			
 			window.location.href = newUrl;
 			console.log(window.location.href,newUrl);
 		}
